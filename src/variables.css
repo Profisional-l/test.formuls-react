@@ -1,0 +1,51 @@
+:root {
+    --var-body-bg: #1b1b1b;
+    --var-img-bg: url("./Homepage/img/bg1.png");
+    --var-header-bg: #ffffff09;
+    --var-allcolor: #ffffff;
+    --var-but-bg: #d9d0ff;
+    --var-but-color: #000000;
+    --var-switch-color: #ffffff;
+    --var-link-color: #9748ff;
+    --var-logo-c: #fff;
+    --var-switchback: #0e0e0e;
+    --var-switchcircle: #fff;
+    --var-but-filter: invert(0%) grayscale(0%);
+    --var-goupcolor: invert(70%) grayscale(0%);
+    --var-nameformul-bg: url("./Homepage/img/фильтр0.png");
+    --var-circle-bg: #adadad;
+    --var-switch-img: url("./Header/img/moon01.png");
+    --var-MoP-img: url("../images/physlogo.png");
+
+    --var-cardsOpen-bg: #332B3B;
+    --var-cardsClose-bg: #222222;
+    --var-openallbut-bg: #0000004d;
+    --var-cards-color: invert(100%) grayscale(100%);
+  }
+  
+  [light] {
+    --var-body-bg: #f0f0f0;
+    --var-img-bg: url("./Homepage/img/white_bg1.png");
+    --var-header-bg: rgba(216, 176, 255, 0.158);
+    --var-allcolor: #000000;
+    --var-but-bg: #6300a586;
+    --var-but-color: #ffffff;
+    --var-switch-color: #222222;
+    --var-link-color: #3f0091;
+    --var-logo-c: #000;
+    --var-switchback: #e1e1e1;
+    --var-switchcircle: #000000;
+    --var-goupcolor: invert(50%) grayscale(0%);
+    --var-nameformul-bg: url("./Homepage/img/фильтр.png");
+    --var-but-filter: invert(100%) grayscale(100%);
+    --var-circle-bg: #bebebe;
+    --var-switch-img: url("./Header/img/sun01.png");
+
+    --var-cardsOpen-bg: #ffffff;
+    --var-cardsClose-bg: #342d3a;
+    --var-openallbut-bg: #000000b0;
+
+    --var-cards-color: invert(0%) grayscale(0%);
+  }
+  
+  

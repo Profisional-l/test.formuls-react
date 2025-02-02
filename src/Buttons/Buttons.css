@@ -1,0 +1,104 @@
+.butcont {
+    display: flex;
+    margin: 20px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+  }
+
+  .butcont.stick {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+    position: sticky;
+    top: 85px;  /* Кнопка прилипает к верхней границе экрана */
+    z-index: 1000;
+    padding: 10px 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 99999999;
+
+}
+
+  
+  .opencards {
+    position: absolute;
+    padding-bottom: 3px;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 5px;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    letter-spacing: 1.5px;
+    /* margin-top: 20px; */
+    background-color: var(--var-openallbut-bg);
+    backdrop-filter: blur(30px);
+    /* background-image: url("./img/glowedblurbg.png"); */
+    color: #fff;
+    height: 55px;
+    border-radius: 25px;
+    border: solid 1px #ffffff33;
+    font-size: 17px;
+    transition: border 0.5s;
+    font-family: "Inter";
+    justify-content: center;
+  }
+
+  
+    #scrollToTopBtn {
+      z-index: 9999; /* Убедитесь, что кнопка выше других элементов */
+      position: fixed;
+      bottom: 0px; /* Отступ от нижней границы */
+      right: 0px; /* Отступ от правой границы */
+      background-color: transparent; /* Полупрозрачный фон */
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.3s, transform 0.3s; /* Плавный переход для opacity и transform */
+      opacity: 0.8; /* Начальная прозрачность */
+    }
+    
+    #scrollToTopBtn:hover {
+      opacity: 1; /* Полная непрозрачность при наведении */
+    }
+    
+    #scrollupbut {
+      filter: var(--var-goupcolor);
+      margin: auto;
+    }
+    
+
+    #buttogame,  #buttoappmarket {
+      position: absolute;
+      padding-bottom: 3px;
+      left: 50%;
+      margin-right: -50%;
+      margin-top: 5px;
+      transform: translate(-50%, -50%);
+      width: 260px;
+      letter-spacing: 1.5px;
+      background-color: var(--var-but-bg);
+      color: var(--var-but-color);
+      height: 55px;
+      border-radius: 25px;
+      border: none;
+      font-size: 17px;
+      transition: border 0.5s;
+      font-family: "Inter";
+      justify-content: center;
+  }
+  
+  #buttoappmarket {
+    background-color: #edb1ff;
+    color: #000000;
+  }
+
+  #buttoappmarket img {
+    position: absolute;
+    width: 15px;
+    margin: 3px 0 0 5px;
+    filter: invert(100%) grayscale(100%); ;
+  }

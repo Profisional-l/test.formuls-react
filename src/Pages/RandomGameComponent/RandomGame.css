@@ -1,0 +1,89 @@
+.game-container {
+  text-align: center;
+  /* margin-top: 50%; */
+}
+
+.parentexttogame {
+  width: 100%;
+  margin-top: 45%;
+}
+
+.texttogame {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+
+  max-width: 300px;
+  background-color: var(--var-but-bg);
+  color: var(--var-but-color);
+  padding: 24px;
+  border-radius: 25px;
+  text-align: left;
+}
+
+
+.game-button-cont {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.game-button {
+  width: 280px;
+  letter-spacing: 1.7px;
+  position: absolute;
+
+  /* position: fixed;
+    top: 850%; */
+  background-color: #2f2f2f;
+  color: #fff;
+  height: 60px;
+  border-radius: 22px;
+  border: solid 2px #707070;
+  font-size: 18px;
+  transition: border 0.5s;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  
+}
+
+.click-counter {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ad-container img {
+  border-radius: 22px;
+  margin: auto;
+  max-width: 90%;
+
+}
+
+@media (min-width: 465px) {
+  .ad-container img {
+    max-width: 350px;
+  }
+  .game-container .flashcard {
+    width: 440px;
+  }
+}
+
+.card {
+  height: 300px;
+}
+
+.game-container .cardsfield {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.game-container .flashcard {
+  height: 200px;
+}

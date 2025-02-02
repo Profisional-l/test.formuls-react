@@ -1,0 +1,188 @@
+@import '../variables.css';
+
+/* header {
+    background-color: var(--var-header-bg);
+    transition: background-color .23s;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 ;
+    margin: 0;
+    height: 52px;
+    z-index: 99999999;
+  } */
+
+  header {
+    margin-bottom: -52px;
+    height: 52px;
+  }
+  
+  header:after{
+    content: '';
+    position: fixed;
+    inset: 00px;
+    filter: blur(20px); 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    mask: linear-gradient(rgb(0, 0, 0) 0%, transparent 11%);
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+/* header {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 0 ;
+  margin: 0;
+  height: 52px;
+  z-index: 99999999;
+
+  background-image:  repeating-linear-gradient(var(--var-body-bg) 0%, transparent 100%);
+  
+} */
+
+  .logoIMG {
+    width: 30px;
+    position: fixed;
+    margin-top: 11px;
+    margin-left: 20px;
+    opacity: 0;
+
+  }
+
+  .logo {
+    /* display: none; */
+    position: fixed;
+    padding-left: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-top: 13px;
+    width: fit-content;
+    z-index: 9999999999;
+  }
+  
+  .logo a::before {
+    color: #fff;
+  }
+  
+  .logo a {
+    color: var(--var-allcolor);
+    transition: color 0.3s;
+  }
+  
+  .logo a:hover {
+    color: #a0a0a0;
+  }
+
+/* ---------------------------------------------------------------------switch--------------------------------- */
+
+/* The switch - the box around the slider */
+.switcherparent {
+    width: 100%;
+  }
+  
+  .switch {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: fixed;
+    padding: 0;
+    right: 10px;
+    top: 9px;
+    z-index: 999999999;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    display: none;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url("../images/фильтр0.png"); */
+    background-color: #0000005b;
+    background-size: 500%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: solid 1px #ffffffb9;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 2px;
+    bottom: 2px;
+    /* background-color: var(--var-switchcircle); */
+    background-image: var(--var-switch-img);
+    background-size: cover;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .no-transition {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  
+  input:checked+.slider {
+    background-color: hsla(266, 100%, 82%, 0.836);
+    /* background-image: url("../images/фильтр0.png");
+    background-size: 600%;
+    background-position: 12% 20%; */
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* ------------------------------------------------------------------------------------------------------------------------------------------ */
+  /* .godownload {
+    width: 100%;
+  } */
+  .downloadbut {
+    display: inline-block;
+    width: 25px;
+    height: 70px;
+    position: fixed;
+    padding: 0;
+    top: -7px;
+    right: 88px;
+    z-index: 999999999;
+    background-color: transparent;
+    border: none;
+    filter: var(--var-but-filter);
+  }    

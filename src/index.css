@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Medium.ttf");
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-family: "Inter";
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--var-body-bg);
+  /* align-items: center;
+      justify-content: center;
+      height: 100vh; */
+  margin: 0;
+  transition: background-color .23s;
+}
+h3 {
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@media (min-width: 1000px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--var-header-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b7b7b7;
+  border-radius: 19px;
+  border: 1px solid var(--var-header-bg);
+}
+
+
+/* Начальное состояние: страница размыта и невидима */
+.page-enter {
+  opacity: 0;
+  /* filter: blur(25px);
+  -webkit-filter: blur(25px); */
+}
+
+/* Анимация появления */
+.page-enter-active {
+  opacity: 1;
+  /* filter: blur(0);
+  -webkit-filter: blur(0); */
+  transition: opacity 220ms ease-in-out, filter 220ms ease-in-out;
+}
+
+/* Начало выхода: нормальное состояние */
+.page-exit {
+  opacity: 1;
+  /* filter: blur(0); */
+}
+
+/* Анимация исчезновения */
+.page-exit-active {
+  opacity: 0;
+  /* filter: blur(25px);
+  -webkit-filter: blur(25px); */
+  transition: opacity 220ms ease-in-out, filter 220ms ease-in-out;
+}

@@ -1,0 +1,23 @@
+.qrcodeCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #QRtoGooglePlay {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  
+  @media (max-width: 1000px) {
+    .qrcodeCont {
+      display: none;
+    }
+  }
+  

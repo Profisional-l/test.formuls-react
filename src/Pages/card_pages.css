@@ -1,0 +1,295 @@
+.namecategoriesonit, .nameonallpage {
+  color: var(--var-allcolor);
+  width: 100%;
+  text-align: center;
+  margin-bottom: -15px;
+  margin-top: 60px;
+  padding-top: 15px;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.nameonallpage {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.namepodcat {
+  color: var(--var-allcolor);
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 21px;
+}
+
+.cardsfield {
+  top: 50%;
+  justify-content: center;
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px; /* Добавляем минимальную высоту */
+}
+
+.search_cardsfield {
+  width: 100%;
+}
+
+.formulas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.flashcard {
+  background-color: var(--var-cardsClose-bg);
+  color: #fff;
+  border: 1px solid #cccccc4b;
+  border-radius: 22px;
+  /* padding: 20px; */
+  padding: 0 10px 0 10px;
+  text-align: center;
+  cursor: pointer;
+  /* transition: transform 0.5s; */
+  margin: 10px;
+  width: 240px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 540px) {
+  .bigcards {
+    width: 523px;
+  }
+}
+
+.flashcard img {
+  filter: var(--var-cards-color);
+  max-width: 100%;
+  height: auto;
+  max-height: 130px;
+}
+
+.flashcard {
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.flashcard.flipped {
+  transform: rotateX(180deg);
+}
+
+.flippedIT {
+  transform: rotateX(180deg);
+}
+
+
+@media (max-width: 645px) {
+  .flashcard {
+    width: 43%;
+  }
+}
+
+@media (max-width: 600px) {
+  .flashcard {
+    width: 42%;
+  }
+}
+
+/* @media (max-width: 425px){
+        .flashcard {
+          width: 39%;
+        }
+  
+      }
+      @media (max-width: 380px){
+        .flashcard {
+          width: 38%;
+        }
+        .card-title {
+          font-size: 18px;
+  
+        }
+  
+      } */
+@media (min-width: 540px) {
+  .bigcards {
+    width: 523px;
+  }
+}
+
+@media (max-width: 660px) {
+  .flashcard {
+    width: 100%;
+  }
+
+  .visible {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 21px;
+  }
+}
+
+
+.flashcard .card-content {
+  display: none;
+}
+
+.flashcard.flipped .card-title {
+  display: none;
+}
+
+.flashcard.flipped .card-content {
+  display: block;
+}
+
+.flashcard.allflipped {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.flashcard.allflipped .card-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  order: 2;
+  width: 100%;
+  color: var(--var-allcolor);
+  font-weight: bold;
+  transform: rotateX(180deg);
+}
+
+.flashcard.allflipped .card-content {
+  order: 1;
+  display: block;
+}
+
+.flashcard.allflipped {
+  transform: rotateX(180deg);
+}
+
+.card-title,
+.card-content {
+  font-size: 20px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 2;
+  }
+}
+
+.card-content {
+  transform: rotateX(180deg);
+  animation: fadein 0.2s ease-in-out;
+}
+
+.card-title {
+  animation: fadein 0.2s ease-in-out;
+}
+.serchfield {
+  max-width: 260px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.search_item {
+  font-size: 18px;
+  height: 55px;
+  background-color: #0000001f;
+  color: var(--var-allcolor);
+  border-radius: 25px;
+  border: solid 1px #ffffff36;
+  text-align: center;
+}
+
+.search-input {
+  height: 55px;
+  padding: 0;
+  flex-grow: 1;
+  border-radius: 25px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  outline: none;
+  font-size: 16px;
+}
+
+.clear_but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  /* background-color: #00000046; */
+  border-radius: 25px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.clear_but:disabled {
+  background-color: #0000001f;
+  cursor: default;
+}
+
+.clear_but:disabled img {
+  opacity: .5;
+}
+
+
+.clear_but img {
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  filter: var(--var-but-filter);
+  margin-right: 3px;
+}
+
+/* Новый класс для скрытия, не ломает flex-сетку */
+.hidden {
+  display: none; /* Полностью скрываем карточку */
+  width: 100%;
+  opacity: 0;
+}
+
+.visible {
+  display: flex; /* Восстанавливаем нормальное отображение */
+  opacity: 1;
+}
+
+.not-found-text {
+  color: var(--var-allcolor);
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 33px;
+}
