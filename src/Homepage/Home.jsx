@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 import monologo from "./img/monologo.png";
 import white_bg from "./img/white_bg1.png";
 import betaicon from "./img/betaicon.png";
@@ -95,7 +97,6 @@ const Home = () => {
   return (
     <>
       <div className="main-cont">
-
         <ScrollUpButton />
         <div className="background"></div>
         {bgactivate()}
@@ -112,7 +113,7 @@ const Home = () => {
           </div>
 
           <h4 className="linkFromMain">
-            <a id="linkTOhow" href="#categoriesfield">
+            <a id="linkTOhow" href="#section1">
               Как это работает?
             </a>{" "}
             |{" "}
@@ -121,7 +122,10 @@ const Home = () => {
             </Link>
           </h4>
 
-          <ToGameButton LinkTo={"/allformulsgame"} Title={"Случайные формулы"} />
+          <ToGameButton
+            LinkTo={"/allformulsgame"}
+            Title={"Случайные формулы"}
+          />
 
           <ToGameButton LinkTo={"/podborgame"} Title={"Режим подбора"} />
 
@@ -214,8 +218,8 @@ const Home = () => {
             Атомная физика
           </Link>
         </div>
-
-        <div id="categoriesfield">
+        <ScrollableAnchor id={'section1'}>
+        <div id={'categoriesfield'}>
           <div id="maintext" className="textonmaincont">
             <div className="textonmain">
               <h3>Как пользоваться Formuls?</h3>
@@ -273,7 +277,9 @@ const Home = () => {
             </div>
           </div>{" "}
           <br />
-        </div>
+        </div>          
+        </ScrollableAnchor>
+
       </div>
       <Footer />
     </>
